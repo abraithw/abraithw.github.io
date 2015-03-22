@@ -42,6 +42,18 @@
   <p id="postArea"></p> 
 </div>
 
+<div class = "smilies" id="smilies">
+<img id="myImage" onclick="changeImage()" src="pic_circle.gif" width="50" height="50">
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    image.src = "pic_smiley.gif";
+    
+}
+</script>
+</div>
+
 <div id="replies">
   <style>
 .myText {
@@ -61,18 +73,7 @@
 <!--make image more opaque-->
 <div class = "body-block">You are not alone!</div>
 
-<div class = "smilies" id="smilies">
-<img id="myImage" onclick="changeImage()" src="pic_circle.gif" width="50" height="50">
-<img src="cat.gif">
-
-<script>
-function changeImage() {
-    var image = document.getElementById('myImage');
-    image.src = "pic_smiley.gif";
-    
-}
-</script>
-</div>
+<div><img src="cat.gif"></div>
 
 <script type="text/javascript">
 var counter = 0;
