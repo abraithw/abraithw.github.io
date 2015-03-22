@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-
 <html>
-<header>
-  <title>Anonymous Venting</title>
-</header>
+<head>
+  <title>Duke Supports</title>
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vent.css">
+</head>
+
 <body>
-  <footer></footer>
+  <div class = "title-block">Duke Supports</div>
+
+<script type="text/javascript">	
+	var email;
+	function sendMail() {	
+	var HavingABadDay="mailto:"+email;	
+    	var link = HavingABadDay
+             + "?subject=" + escape("You can do it!")
+             + "&body=" + escape(document.getElementById('myText').value)
+    ;
+    window.location.href = link;
+}
+	var posts = [];
+	function printOut() {
+	email = prompt("What is your email? (If you want people to send uplifting messages to you!)");	
+		var stuff = document.getElementById('yok').value;
+		//posts.push(stuff);
+		document.getElementById("postArea").innerHTML = stuff;
+	}
+</script>
+
+<div id="singlepost">
+	<input type="text" name="chat" placeholder="  How are you feeling today?" id= "yok" size = "150"><br>
+	<button id="callprompt" onclick="printOut()">
+	Post!</button>
+</div>
+
+<div id="answers">
+	<p id="postArea"></p>	
+</div>
+
+<div id="replies">
+<textarea id="myText">
+    Send your thoughts this way.
+</textarea>
+<br>
+<button onclick="sendMail(); return false">Reply</button>
+</div>
+
+<!--make image more opaque-->
+<div class = "title-block">You are not alone!</div>
+
+<div class = "smilies" id="smilies">
+<img id="myImage" onclick="changeImage()" src="pic_circle.gif" width="50" height="50">
+<img src="cat.gif">
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    image.src = "smiley.jpg";
+    
+}
+</script>
+</div>
+
+<script type="text/javascript">
+var counter = 0;
+</script>
+</div>
+
 </body>
+
 </html>
