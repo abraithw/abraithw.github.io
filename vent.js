@@ -9,8 +9,12 @@
   function printOut() {
   email = prompt("What is your email? (If you want people to send uplifting messages to you!)");  
     var stuff = document.getElementById('yok').value;
+
     //posts.push(stuff);
     document.getElementById("postArea").innerHTML = stuff;
+    stuff.style.opacity=0;
+    var a = document.getElementById('callprompt');
+    a.style.opacity=0;
     var x = document.getElementById('myText');
     x.style.opacity=1;
     var y = document.getElementById('reply');

@@ -8,11 +8,21 @@
 
 <body>
 <script src="vent.js"></script>
+
+
   <div class = "title-block">Duke Supports</div>
 
 <div id="singlepost">
-  <input type="text" name="chat" placeholder="  How are you feeling today?" id= "yok" size = "150"><br>
-  <button id="callprompt" onclick="printOut()">
+  <style>
+.chat {
+    opacity: 1;
+}
+.callprompt{
+  opacity: 1;
+}
+</style>
+  <input type="text" class="chat" placeholder="  How are you feeling today?" id= "yok" size = "150"><br>
+  <button class="callprompt" id="callprompt" onclick="printOut()">
   Post!</button>
 </div>
 
