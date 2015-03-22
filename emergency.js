@@ -42,7 +42,9 @@ var myElements = document.querySelectorAll(".hurt")
   bye10.parentNode.removeChild(bye10);
 
 function ill(e1){
-
+var myElements = document.querySelectorAll(".ill")
+  for (var i=0; i<myElements.length; i++){
+    myElements[i].style.opacity = 1;
 }
 
   var bye=document.getElementById("sex");
@@ -65,29 +67,3 @@ function ill(e1){
   bye12.parentNode.removeChild(bye12);
   var bye13=document.getElementById("Dean on Call");
   bye13.parentNode.removeChild(bye13);
-
-
-function short(el) {
-  var myElements = document.querySelectorAll(".short")
-  for (var i=0; i<myElements.length; i++){
-    myElements[i].style.opacity = 1;
-  }
-  
-}
-
-
-function long(el) {
-  el.style.color="red";
-  el.style.width= "90%";
-  
-  var myElements = document.querySelectorAll(".tblong");
-  for (var i = 0; i < myElements.length; i++) {
-    myElements[i].style.opacity = 1;
-  }
-  var bye=document.getElementById("short");
-  bye.parentNode.removeChild(bye);
-  var bye1=document.getElementById("STINF");
-  bye1.parentNode.removeChild(bye1);
-  var bye2=document.getElementById("pharm");
-  bye2.parentNode.removeChild(bye2);
-}
